@@ -17,7 +17,7 @@ To obtain the better accuracy across datasets, Algorithm 3 makes use of a lightw
 ### DAVIS 346 Event Camera
 The DAVIS 346 event camera is an innovative and proficient event-based vision sensor created by iniLabs, a prominent supplier of event-based sensing systems. The DAVIS (Dynamic and Active-pixel Vision Sensor) series signifies a notable progression within the domain of event cameras.
 
-![cam!](FIGURE/CAM.png)
+<img src="FIGURE/CAM.png" width="250" >
 Figure1 DAVIS 346 Event Camera
 
 ### Background Activity Noises in Event Camera
