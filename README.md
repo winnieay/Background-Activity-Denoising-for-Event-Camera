@@ -17,7 +17,7 @@ To obtain the better accuracy across datasets, Algorithm 3 makes use of a lightw
 ### DAVIS 346 Event Camera
 The DAVIS 346 event camera is an innovative and proficient event-based vision sensor created by iniLabs, a prominent supplier of event-based sensing systems. The DAVIS (Dynamic and Active-pixel Vision Sensor) series signifies a notable progression within the domain of event cameras.
 <p align="center">
-  <img src="FIGURE/CAM.png" width="250" >
+  <img src="FIGURE/CAM.png" width="250" ><br />
   Figure1 DAVIS 346 Event Camera
 </p>
 
@@ -29,8 +29,8 @@ Leak noises and shot noises are two forms of undesired signals that should be fi
 For conventional cameras, it produces sequences of signal frames containing complete pixel information at regular intervals. Unlike conventional cameras, event cameras capture signals by detecting the brightness changes and encode the time. Thus, the output of event cameras is called Events. Event cameras asynchronously output events, which means it generates signal outputs based on local changes in pixel intensity in real time.
 
 <p align="center">
-  <img src="FIGURE/COMP.png" height="200" >
-  Figure2 The Comparison of Signal Outputs between Event Cameras and Conventional Cameras<br />
+  <img src="FIGURE/COMP.png" height="200" ><br />
+  Figure2 The Comparison of Signal Outputs between Event Cameras and Conventional Cameras <br />
 </p>
 
 
@@ -46,7 +46,7 @@ The BAF functions by analysing the behavioural patterns of adjacent events and d
 
 Upon the occurrence of an event inside the camera's visual range, the Behaviour Analysis Framework commences its analysis by considering the temporal dimensions of the event. The primary emphasis is on the event's nearest neighbours, which refer to the events that are geographically in closest proximity to it. Through the analysis of these adjacent occurrences, the BAF seeks to discern patterns and associations within the temporal realm.
 <p align="center">
-  <img src="FIGURE/BA.png">
+  <img src="FIGURE/BA.png"><br />
   Figure2 The Background Activity Filter (BAF)<br />
 </p>
 
@@ -54,14 +54,14 @@ Upon the occurrence of an event inside the camera's visual range, the Behaviour 
 ### Algorithm 2 - The Spatiotemporal Correlation Filter (STCP)
 The STCF and the Background Activity Filter (BAF) have a same operational principle, which involves analysing the temporal intervals between the present event and its closest neighbouring events. In contrast to the BAF, which primarily focuses on the actions of individual neighbours, the STCF takes into account the combined behaviour of several neighbours in order to arrive at its conclusion.
 <p align="center">
-  <img src="FIGURE/STCP.png">
+  <img src="FIGURE/STCP.png"><br />
 Figure3 The Spatiotemporal Correlation Filter (STCP)<br />
 </p>
 
 ### Algorithm 3 - The Multilayer Perceptron Denoising Filter (MLPF)
 In order to investigate the potential improvement in denoising accuracy, we have devised a Deep Neural Network (DNN) denoiser using a basic Multilayer Perceptron (MLP) architecture[11]. The objective is to assess the performance of a lightweight classifier trained on annotated data.
 <p align="center">
-  <img src="FIGURE/MLPF.png">
+  <img src="FIGURE/MLPF.png"><br />
   Figure4 The Multilayer Perceptron Denoising Filter (MLPF)<br />
 </p>
 
