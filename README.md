@@ -27,7 +27,7 @@ Leak noises and shot noises are two forms of undesired signals that should be fi
 For conventional cameras, it produces sequences of signal frames containing complete pixel information at regular intervals. Unlike conventional cameras, event cameras capture signals by detecting the brightness changes and encode the time. Thus, the output of event cameras is called Events. Event cameras asynchronously output events, which means it generates signal outputs based on local changes in pixel intensity in real time.
 
 <img src="FIGURE/COMP.png" height="200" >
-Figure2 The Comparison of Signal Outputs between Event Cameras and Conventional Cameras
+Figure2 The Comparison of Signal Outputs between Event Cameras and Conventional Cameras<br />
 
 Data Format of Each Event:
 •	Event Coordinates: The X and Y coordinates of the pixel to indicate the location that the event occurred.
@@ -41,21 +41,21 @@ The BAF functions by analysing the behavioural patterns of adjacent events and d
 
 Upon the occurrence of an event inside the camera's visual range, the Behaviour Analysis Framework commences its analysis by considering the temporal dimensions of the event. The primary emphasis is on the event's nearest neighbours, which refer to the events that are geographically in closest proximity to it. Through the analysis of these adjacent occurrences, the BAF seeks to discern patterns and associations within the temporal realm.
 <img src="FIGURE/BA.png">
-Figure2 The Background Activity Filter (BAF)
+Figure2 The Background Activity Filter (BAF)<br />
 
 ### Algorithm 2 - The Spatiotemporal Correlation Filter (STCP)
 The STCF and the Background Activity Filter (BAF) have a same operational principle, which involves analysing the temporal intervals between the present event and its closest neighbouring events. In contrast to the BAF, which primarily focuses on the actions of individual neighbours, the STCF takes into account the combined behaviour of several neighbours in order to arrive at its conclusion.
 <img src="FIGURE/STCP.png">
-Figure3 The Spatiotemporal Correlation Filter (STCP)
+Figure3 The Spatiotemporal Correlation Filter (STCP)<br />
 
 ### Algorithm 3 - The Multilayer Perceptron Denoising Filter (MLPF)
 In order to investigate the potential improvement in denoising accuracy, we have devised a Deep Neural Network (DNN) denoiser using a basic Multilayer Perceptron (MLP) architecture[11]. The objective is to assess the performance of a lightweight classifier trained on annotated data.
 <img src="FIGURE/MLPF.png">
-Figure4 The Multilayer Perceptron Denoising Filter (MLPF)
+Figure4 The Multilayer Perceptron Denoising Filter (MLPF)<br />
 
 ## Result
 <img src="FIGURE/RESULT.png">
-Figure5 The Result of BAF, STCP and MLPF for Comparison
+Figure5 The Result of BAF, STCP and MLPF for Comparison<br />
 
 The use of three algorithms, namely STCF, BAF, and MLPF, is viable for the purpose of filtering leak sounds. It is evident that all three algorithms exhibit satisfactory performance in this aspect, but with potential variations in their individual performance characteristics. Conducting a more extensive examination and comparison of the algorithms' performance, specifically in relation to metrics such as true positive rate, false positive rate, and other pertinent measurements, would provide a full comprehension of their respective merits and limitations.
 
