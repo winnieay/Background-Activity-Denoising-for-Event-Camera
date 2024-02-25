@@ -25,8 +25,9 @@ Leak noises and shot noises are two forms of undesired signals that should be fi
 
 ## The Output of Event Camera
 For conventional cameras, it produces sequences of signal frames containing complete pixel information at regular intervals. Unlike conventional cameras, event cameras capture signals by detecting the brightness changes and encode the time. Thus, the output of event cameras is called Events. Event cameras asynchronously output events, which means it generates signal outputs based on local changes in pixel intensity in real time.
-<img src="FIGURE/CAM.png" width="250" >
-*Figure1 The Comparison of Signal Outputs between Event Cameras and Conventional Cameras*
+
+<img src="FIGURE/COMP.png" height="200" >
+*Figure2 The Comparison of Signal Outputs between Event Cameras and Conventional Cameras*
 
 Data Format of Each Event:
 •	Event Coordinates: The X and Y coordinates of the pixel to indicate the location that the event occurred.
